@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: #e6e2de;
+    color: #2D2D2D;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    display: none;
+}
+
+
+#topo {
+    width: 100%;
+    background: linear-gradient(135deg, #003893, #001f5c); 
+    color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+#topo h1 {
+    font-size: 50px;
+    color: #FFCD00;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#topo p {
+    font-size: 14px;
+    color: #FFF3D6;
+    margin-bottom: 20px;
+}
+
+#topo nav ul {
+    list-style: none; /* tira os botõezinhos de lista */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px; /* espaço entre os botões do menu */
+}
+
+#topo nav ul li {
+    margin-bottom: 0; 
+}
+
+#topo nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    transition: background-color 0.3s;
+}
+
+#topo nav ul li a:hover {
+    background-color: #FFCD00;
+    color: #001f5c;
+}
+
+/* Área principal com os cards em grade que expande para empurrar o rodapé */
+main {
+    max-width: 1200px;
+    width: 100%; /* EUUU AMALDIÇOU ESSA LINHA DEMONIACA QUE EU NAO CONSIGO DEIXA OS CARD GORDINHO KRLLL */
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    flex: 1; 
+}
+
+main > div {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #003893;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main > div h2 {
+    color: #023E8A; 
+    font-size: 22px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFF3D6;
+    padding-bottom: 8px;
+}
+
+main > div h2 a {
+    color: #023E8A;
+    text-decoration: none;
+}
+
+main > div h2 a:hover {
+    color: #E63946;
+    text-decoration: underline;
+}
+
+main > div h3 {
+    color: #E63946; 
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+img {
+    border-radius: 8px;
+    margin: 12px 0;
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+p {
+    margin-bottom: 12px;
+    color: #4A4A4A;
+}
+
+main > div ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #4A4A4A;
+}
+
+a[href="#topo"] {
+    display: inline-block;
+    margin-top: 15px;
+    color: #023E8A;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+a[href="#topo"]:hover {
+    color: #E63946;
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    padding: 25px 20px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto; /* Mantém grudado embaixo */
+}
+
+footer p {
+    color: #CCCCCC;
+    margin-bottom: 4px;
+}
+
+body > a[href="index.html"] {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+body > a[href="index.html"] p {
+    background-color: #023E8A;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.bandeira-topo {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

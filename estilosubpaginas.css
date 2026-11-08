@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: arial, sans-serif;
+    background-color: #e6e2de;
+    color: #2D2D2D;
+    line-height: 1.6;
+    display: flex; /*deixa lateral*/
+}
+
+hr {
+    display: none; /* esconde as linha hr */
+}
+
+#topo {
+    width: 280px;
+    background-color: #f9b233; /* Amarelo Dourado */
+    color: #070707;
+    padding: 30px 20px;
+    position: fixed; /* Mantém a barra lateral fixa na tela */
+    top: 0; 
+    left: 0;
+    height: 100vh;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+    display: flex; /* nao sei porque disso mas ta fazendo diferença no codigo :( */
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os itens no topo */
+}
+
+#topo h1 {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    /* tirei o font-weight: 700; pa ve oq muda xd*/
+}
+
+#topo p {
+    font-size: 14px;
+    color: #FFF3D6;
+    margin-bottom: 30px;
+}
+
+#topo nav ul {
+    list-style: none; /*tirei os botaozinhos de lista*/
+}
+
+#topo nav ul li {
+    margin-bottom: 12px; /* afastei os botao*/
+}
+#topo nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15); /* fundo transparente */
+}
+#topo nav ul li a:hover {
+    background-color: #023E8A;
+}
+
+main {
+    margin-left: 280px;
+    padding: 40px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #F9B233;
+}
+section h2 {
+    color: #023E8A; 
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFF3D6;
+    padding-bottom: 8px;
+    /* muda o titulo e da uma linha de destaque */
+}
+
+section h3 {
+    color: #E63946; 
+    /* muda a cor dos subtitilos */
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 8px;
+    margin: 12px 0;
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+p {
+    margin-bottom: 12px; /* afasta os paragrafo */
+    color: #4A4A4A;
+    
+}
+/* botao de voltar custumizxado (eu nao aguento mais junior, eu nao aguento mais... nada mais faz sentido
+o verdadeiro gabriel se perdeu fazendo esse codigo, ele ja nao é mais o mesmo :( */
+a[href="#topo"] {
+    display: inline-block;
+    margin-top: 15px;
+    color: #023E8A;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+a[href="#topo"]:hover {
+    color: #E63946;
+    text-decoration: underline;
+}
+
+footer {
+    margin-left: 280px;
+    padding: 20px 40px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    /* faz um roda pé co fundin escuro la ele */
+}
+
+footer p {
+    color: #CCCCCC;
+    margin-bottom: 4px;
+}
+body > a[href="index.html"] {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+body > a[href="index.html"] p {
+    background-color: #023E8A;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
